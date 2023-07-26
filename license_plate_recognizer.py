@@ -1,3 +1,4 @@
+
 # test file if you want to quickly try tesseract on a license plate image
 import pytesseract
 import cv2
