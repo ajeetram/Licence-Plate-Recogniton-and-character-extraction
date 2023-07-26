@@ -21,8 +21,8 @@ rect_kern = cv2.getStructuringElement(cv2.MORPH_RECT, (3,3))
 
 # apply dilation 
 dilation = cv2.dilate(thresh, rect_kern, iterations = 1)
-#cv2.imshow("dilation", dilation)
-#cv2.waitKey(0)
+# cv2.imshow("dilation", dilation)
+# cv2.waitKey(0)
 # find contours
 try:
     contours, hierarchy = cv2.findContours(dilation, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
